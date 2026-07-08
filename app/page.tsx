@@ -384,10 +384,16 @@ export default function Home() {
                 <Phone className="h-5 w-5 text-coral" aria-hidden="true" />
                 <span>{profile.phone}</span>
               </a>
-              <p className="contact-row flex items-center gap-3 pb-4 text-ink/50" aria-disabled="true">
-                <MapPin className="h-5 w-5 text-ink/30" aria-hidden="true" />
+              <a
+                className="contact-row flex items-center gap-3 pb-4 text-ink/75 transition hover:text-teal"
+                href={profile.locationUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <MapPin className="h-5 w-5 text-coral" aria-hidden="true" />
                 <span>{profile.locationPlaceholder}</span>
-              </p>
+                <ExternalLink className="h-4 w-4" aria-hidden="true" />
+              </a>
               <a
                 className="contact-row flex items-center gap-3 pb-4 text-ink/75"
                 href={profile.linkedin}

@@ -9,7 +9,8 @@ export const profile = {
   resumeUrl: "/Bhavani_Surepally_Resume%20%281%29.pdf",
   heroImage: "/profile.jpeg",
   githubPlaceholder: "https://github.com/SurepallyBhavani",
-  locationPlaceholder: "Hyderabad, India"
+  locationPlaceholder: "Hyderabad, India",
+  locationUrl: "https://www.google.com/maps/search/?api=1&query=Hyderabad%2C%20India"
 };
 
 export const navItems = [
