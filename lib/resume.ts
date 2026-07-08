@@ -31,9 +31,9 @@ export const summary = [
 
 export const metrics = [
   { value: "9.3", label: "CGPA" },
-  { value: "24h", label: "CloudVault file expiry" },
-  { value: "200+", label: "Members led" },
-  { value: "150+", label: "Workshop participants served" }
+  { value: "24h", label: "CloudVault File Expiry" },
+  { value: "200+", label: "Members Led" },
+  { value: "150+", label: "Workshop Participants Served" }
 ];
 
 export const skills = [
@@ -46,7 +46,7 @@ export const skills = [
     items: ["Data Structures and Algorithms", "Object-Oriented Programming", "System Design", "Code Review", "Git/GitHub", "REST APIs"]
   },
   {
-    category: "Cloud and DevOps",
+    category: "Cloud & DevOps",
     items: ["AWS S3", "AWS Lambda", "AWS EC2", "AWS RDS", "AWS VPC", "AWS IAM", "EventBridge", "ALB", "CloudWatch", "Docker", "GitHub Actions", "Boto3"]
   },
   {
@@ -60,7 +60,7 @@ export const skills = [
       "Burp Suite",
       "SAST",
       "DAST",
-      "JWT and Session Analysis",
+      "JWT & Session Analysis",
       "Vulnerability Assessment",
       "Input Validation"
     ]
@@ -75,8 +75,8 @@ export const experience = [
   {
     company: "Oracle",
     role: "Project Intern - Application Security Analyst",
-    period: "Jan 2026 - Present",
-    location: "Application security",
+    period: "Jan 2026 - Jul 2026",
+    location: "Application Security",
     summary: "Manual security testing, source-code review, SAST/DAST triage, and remediation guidance for enterprise applications.",
     highlights: [
       "Identified and helped remediate OWASP Top 10 vulnerabilities including SQL injection, XSS, and insecure data logging.",
@@ -105,7 +105,7 @@ export const projects = [
     repositoryUrl: "https://github.com/SurepallyBhavani/pg_project_rag"
   },
   {
-    name: "Smart Medication Alert System using Image Processing",
+    name: "Smart Medication Alert System Using Image Processing",
     technologies: ["Computer Vision", "OpenCV", "SQLite", "Twilio API"],
     outcome: "Detected missed or incorrect medication doses and notified caregivers.",
     description:
@@ -134,7 +134,7 @@ export const education: EducationItem[] = [
   {
     school: "JNTUH University College of Engineering, Science & Technology, Hyderabad",
     program: "Integrated B.Tech-M.Tech in Computer Science and Engineering",
-    period: "2021 - Present",
+    period: "2021 - 2026",
     result: "CGPA: 9.3",
     logoInitials: "JNTUH",
     logoUrl: "/jntu_logo.jpeg"

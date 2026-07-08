@@ -62,11 +62,11 @@ All concrete content is based on the provided resume:
 
 - Summary
 - Skills
-- Oracle application security internship
+- Oracle Application Security Internship
 - Projects
 - Education
-- Certifications and technical training
-- Leadership and activities
+- Certifications and Technical Training
+- Leadership and Activities
 - Contact
 
 The downloadable resume button points to:

@@ -114,8 +114,8 @@ export default function Home() {
 
       <Section
         id="summary"
-        eyebrow="Professional summary"
-        title="About me"
+        eyebrow="Professional Summary"
+        title="About Me"
         tone="muted"
       >
         <div className="grid gap-4 md:grid-cols-3">
@@ -130,7 +130,7 @@ export default function Home() {
       <Section
         id="skills"
         eyebrow="Skills"
-        title="Technical skills"
+        title="Technical Skills"
       >
         <div className="surface-panel p-5 md:p-8">
           {skills.map((group, index) => {
@@ -159,7 +159,7 @@ export default function Home() {
       <Section
         id="experience"
         eyebrow="Experience"
-        title="Oracle application security internship"
+        title="Oracle Application Security Internship"
         tone="muted"
       >
         <div className="experience-frame relative pl-6">
@@ -202,7 +202,7 @@ export default function Home() {
       <Section
         id="projects"
         eyebrow="Projects"
-        title="Selected projects"
+        title="Personal Projects"
       >
         <div className="space-y-5">
           {projects.map((project, index) => (
@@ -285,7 +285,7 @@ export default function Home() {
       <Section
         id="certifications"
         eyebrow="Training"
-        title="Certifications and technical training"
+        title="Certifications and Technical Training"
       >
         <div className="grid gap-5 md:grid-cols-2">
           {certifications.map((item, index) => (
@@ -312,7 +312,7 @@ export default function Home() {
       <Section
         id="leadership"
         eyebrow="Leadership"
-        title="Community and event leadership"
+        title="Community and Event Leadership"
         tone="muted"
       >
         <div className="grid gap-5 md:grid-cols-2">
