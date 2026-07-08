@@ -1,6 +1,6 @@
 # Bhavani Surepally Portfolio
 
-Modern personal portfolio website generated from `bhavani_resume_f.pdf`.
+Modern personal portfolio website generated from `Bhavani_Surepally_Resume (1).pdf`.
 
 ## Stack
 
@@ -46,7 +46,13 @@ portfolio-site/
     resume.ts
   public/
     Bhavani-Surepally-Resume.pdf
+    Bhavani_Surepally_Resume (1).pdf
+    data_science.jpeg
+    inter_logo.jpeg
+    jntu_logo.jpeg
     profile.jpeg
+    quest_logo.jpeg
+    school_logo.jpeg
     secure-code-review-workspace.png
 ```
 
@@ -56,17 +62,17 @@ All concrete content is based on the provided resume:
 
 - Summary
 - Skills
-- Oracle internship experience
+- Oracle application security internship
 - Projects
 - Education
-- Certifications
+- Certifications and technical training
 - Leadership and activities
-- Contact details
+- Contact
 
 The downloadable resume button points to:
 
 ```text
-public/Bhavani-Surepally-Resume.pdf
+public/Bhavani_Surepally_Resume (1).pdf
 ```
 
 ## Profile Visual

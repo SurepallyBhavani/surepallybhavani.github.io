@@ -2,26 +2,28 @@ import Image from "next/image";
 import {
   ArrowUpRight,
   Award,
+  BrainCircuit,
   BriefcaseBusiness,
+  Cloud,
   Code2,
+  Database,
   Download,
   ExternalLink,
   Github,
-  GraduationCap,
   Linkedin,
   Mail,
   MapPin,
   Phone,
   ShieldCheck,
-  Trophy
+  UsersRound
 } from "lucide-react";
 import { Section } from "@/components/Section";
 import { SkillChips } from "@/components/SkillChips";
 import {
-  achievements,
   certifications,
   education,
   experience,
+  leadership,
   navItems,
   profile,
   projects,
@@ -29,7 +31,7 @@ import {
   summary
 } from "@/lib/resume";
 
-const skillIcons = [Code2, BriefcaseBusiness, ShieldCheck, GraduationCap, Award];
+const skillIcons = [Code2, BriefcaseBusiness, Cloud, Database, ShieldCheck, BrainCircuit];
 
 export default function Home() {
   return (
@@ -157,7 +159,7 @@ export default function Home() {
       <Section
         id="experience"
         eyebrow="Experience"
-        title="Oracle security internship"
+        title="Oracle application security internship"
         tone="muted"
       >
         <div className="experience-frame relative pl-6">
@@ -242,7 +244,7 @@ export default function Home() {
       <Section
         id="education"
         eyebrow="Education"
-        title="Academic record with strong computer science momentum."
+        title="Education"
         tone="muted"
       >
         <div className="grid gap-4">
@@ -252,8 +254,20 @@ export default function Home() {
               className="evidence-strip reveal-up p-5 md:p-6"
               style={{ animationDelay: `${index * 80}ms` }}
             >
-              <div className="grid gap-4 md:grid-cols-[120px_1fr_auto] md:items-center">
-                <p className="case-number text-3xl font-semibold">0{index + 1}</p>
+              <div className="grid gap-4 md:grid-cols-[88px_1fr_auto] md:items-center">
+                <div className="institution-logo grid h-16 w-16 place-items-center rounded text-sm font-semibold text-ink">
+                  {item.logoUrl ? (
+                    <Image
+                      src={item.logoUrl}
+                      alt={`${item.school} logo`}
+                      width={64}
+                      height={64}
+                      className="h-full w-full object-contain p-2"
+                    />
+                  ) : (
+                    <span>{item.logoInitials}</span>
+                  )}
+                </div>
                 <div>
                   <h3 className="text-xl font-semibold text-ink">{item.school}</h3>
                   <p className="mt-2 text-base text-ink/70">{item.program}</p>
@@ -270,8 +284,8 @@ export default function Home() {
 
       <Section
         id="certifications"
-        eyebrow="Certifications"
-        title="Security-focused training and qualifications."
+        eyebrow="Training"
+        title="Certifications and technical training"
       >
         <div className="grid gap-5 md:grid-cols-2">
           {certifications.map((item, index) => (
@@ -296,13 +310,13 @@ export default function Home() {
       </Section>
 
       <Section
-        id="achievements"
-        eyebrow="Achievements"
-        title="Leadership through technical communities and events."
+        id="leadership"
+        eyebrow="Leadership"
+        title="Community and event leadership"
         tone="muted"
       >
         <div className="grid gap-5 md:grid-cols-2">
-          {achievements.map((item, index) => (
+          {leadership.map((item, index) => (
             <article
               key={item.title}
               className="evidence-strip reveal-up p-6"
@@ -310,8 +324,18 @@ export default function Home() {
             >
               <div className="mb-4 flex items-start justify-between gap-4">
                 <div className="flex items-center gap-3">
-                  <span className="icon-tile grid h-10 w-10 place-items-center rounded text-amber">
-                    <Trophy className="h-5 w-5" aria-hidden="true" />
+                  <span className="institution-logo grid h-12 w-12 shrink-0 place-items-center rounded text-amber">
+                    {item.logoUrl ? (
+                      <Image
+                        src={item.logoUrl}
+                        alt={`${item.title} logo`}
+                        width={48}
+                        height={48}
+                        className="h-full w-full object-contain p-1.5"
+                      />
+                    ) : (
+                      <UsersRound className="h-5 w-5" aria-hidden="true" />
+                    )}
                   </span>
                   <h3 className="text-xl font-semibold text-ink">{item.title}</h3>
                 </div>
@@ -326,17 +350,11 @@ export default function Home() {
       <Section
         id="contact"
         eyebrow="Contact"
-        title="Ready for software engineering and application security conversations."
-        description="Contact details are taken from the resume where available. Missing professional links are clearly marked."
+        title="Contact"
       >
         <div className="grid gap-5 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="contact-console p-6 md:p-8">
-            <p className="text-sm font-semibold uppercase text-aqua/75">Open to conversations</p>
-            <h3 className="mt-3 text-3xl font-semibold text-ink">Bhavani Surepally</h3>
-            <p className="mt-4 max-w-2xl text-base leading-7 text-ink/70">
-              Computer Science Engineering student focused on backend development, applied AI, and secure application
-              review.
-            </p>
+            <h3 className="text-3xl font-semibold text-ink">Bhavani Surepally</h3>
             <div className="mt-6 flex flex-wrap gap-3">
               <a
                 href={`mailto:${profile.email}`}

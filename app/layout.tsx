@@ -3,24 +3,26 @@ import type { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://surepallybhavani.github.io"),
   title: "Bhavani Surepally | Software and Security Portfolio",
   description:
-    "Portfolio for Bhavani Surepally, a Computer Science Engineering student and Oracle security intern focused on secure code review, backend development, AI projects, and application security.",
+    "Portfolio for Bhavani Surepally, a Computer Science graduate focused on AWS-backed full-stack applications, application security, and OWASP Top 10 testing.",
   keywords: [
     "Bhavani Surepally",
     "software engineer",
     "application security",
     "secure code review",
+    "AWS",
     "Python",
     "Flask",
-    "machine learning",
+    "Burp Suite",
     "portfolio"
   ],
   authors: [{ name: "Bhavani Surepally" }],
   openGraph: {
     title: "Bhavani Surepally | Software and Security Portfolio",
     description:
-      "Software, backend, AI, and application security portfolio for Bhavani Surepally.",
+      "AWS-backed full-stack, backend, and application security portfolio for Bhavani Surepally.",
     type: "website",
     images: [
       {

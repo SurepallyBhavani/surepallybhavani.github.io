@@ -1,12 +1,12 @@
 export const profile = {
   name: "Bhavani Surepally",
-  role: "Computer Science Engineering Student and Security Intern",
+  role: "Computer Science Graduate and Application Security Analyst",
   tagline:
-    "Software and application security practitioner building backend systems, AI-assisted tools, and secure web experiences.",
+    "Building AWS-backed full-stack applications and testing web applications for OWASP Top 10 vulnerabilities.",
   phone: "+91 9848702930",
   email: "bhavanisurepally03@gmail.com",
   linkedin: "https://linkedin.com/in/bhavani-surepally",
-  resumeUrl: "/Bhavani-Surepally-Resume.pdf",
+  resumeUrl: "/Bhavani_Surepally_Resume%20%281%29.pdf",
   heroImage: "/profile.jpeg",
   githubPlaceholder: "https://github.com/SurepallyBhavani",
   locationPlaceholder: "Hyderabad, India"
@@ -18,149 +18,178 @@ export const navItems = [
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
   { label: "Education", href: "#education" },
-  { label: "Certs", href: "#certifications" },
-  { label: "Leadership", href: "#achievements" },
+  { label: "Training", href: "#certifications" },
+  { label: "Leadership", href: "#leadership" },
   { label: "Contact", href: "#contact" }
 ];
 
 export const summary = [
-  "Computer Science and Engineering student with practical experience across Python development, web development, machine learning, generative AI, and core computer science foundations.",
-  "Currently contributing to Oracle application security work through secure code review, SAST, DAST, manual testing, and vulnerability assessment for enterprise applications.",
-  "Comfortable turning complex feature behavior into security findings, backend workflows, and recruiter-friendly technical narratives."
+  "Computer Science graduate with a 9.3 CGPA and a strong foundation in data structures, algorithms, and application security.",
+  "Builds and deploys full-stack, cloud-hosted applications on AWS across backend APIs, relational databases, infrastructure, and CI/CD.",
+  "Performs manual security testing and source-code review to identify and remediate OWASP Top 10 vulnerabilities using Burp Suite, SAST, and DAST."
 ];
 
 export const metrics = [
-  { value: "9.3", label: "Current CGPA" },
-  { value: "200+", label: "Student club members led" },
-  { value: "150+", label: "Workshop participants supported" },
-  { value: "2026", label: "Oracle and AI security training" }
+  { value: "9.3", label: "CGPA" },
+  { value: "24h", label: "CloudVault file expiry" },
+  { value: "200+", label: "Members led" },
+  { value: "150+", label: "Workshop participants served" }
 ];
 
 export const skills = [
   {
-    category: "Core Programming",
-    items: ["Python Development", "C", "C++", "Java Basics", "Data Structures and Algorithms", "OOP"]
+    category: "Languages",
+    items: ["Python", "C++", "Java", "JavaScript", "SQL", "HTML5", "CSS3"]
   },
   {
-    category: "Web and Backend",
-    items: ["Flask Development", "HTML", "CSS", "JavaScript", "REST API Integration", "Software Architecture"]
+    category: "Software Engineering",
+    items: ["Data Structures and Algorithms", "Object-Oriented Programming", "System Design", "Code Review", "Git/GitHub", "REST APIs"]
   },
   {
-    category: "Databases and Environments",
-    items: ["MySQL", "SQLite", "Relational Database Management", "Linux/Unix", "Git", "GitHub"]
+    category: "Cloud and DevOps",
+    items: ["AWS S3", "AWS Lambda", "AWS EC2", "AWS RDS", "AWS VPC", "AWS IAM", "EventBridge", "ALB", "CloudWatch", "Docker", "GitHub Actions", "Boto3"]
   },
   {
-    category: "Computer Science",
-    items: ["Operating Systems Internals", "Computer Networks", "Distributed Systems"]
+    category: "Databases",
+    items: ["MySQL", "PostgreSQL", "SQLite", "Relational Schema Design", "Query Optimization"]
   },
   {
     category: "Application Security",
     items: [
-      "Secure Code Review",
+      "OWASP Top 10",
+      "Burp Suite",
       "SAST",
       "DAST",
+      "JWT and Session Analysis",
       "Vulnerability Assessment",
-      "OWASP Top 10",
-      "Burp Suite"
+      "Input Validation"
     ]
+  },
+  {
+    category: "AI/ML Tooling",
+    items: ["LangChain", "ChromaDB", "OpenCV", "Vector Search"]
   }
 ];
 
 export const experience = [
   {
     company: "Oracle",
-    role: "Project Intern, Security Team",
+    role: "Project Intern - Application Security Analyst",
     period: "Jan 2026 - Present",
-    location: "Enterprise application security",
-    summary:
-      "Assesses enterprise applications through secure code review, automated analysis, DAST, and manual testing.",
+    location: "Application security",
+    summary: "Manual security testing, source-code review, SAST/DAST triage, and remediation guidance for enterprise applications.",
     highlights: [
-      "Validated high, medium, and low severity vulnerabilities using OWASP Top 10 and secure coding practices.",
-      "Tested authentication, authorization, JWT validation, session management, input validation, access control, privilege escalation, SQL injection, XSS, CSRF, and log injection scenarios.",
-      "Used Burp Suite for request and response analysis, vulnerability validation, and web application security testing."
+      "Identified and helped remediate OWASP Top 10 vulnerabilities including SQL injection, XSS, and insecure data logging.",
+      "Analyzed HTTP/HTTPS traffic in Burp Suite to detect authentication and session-management flaws, JWT validation gaps, and privilege-escalation paths.",
+      "Reviewed application logic and backend data flow to surface edge-case bugs and security gaps ahead of release.",
+      "Triaged SAST/DAST findings by severity and exploitability, then documented remediation guidance for development teams."
     ]
   }
 ];
 
 export const projects = [
   {
-    name: "CloudVault Secure File-Sharing App",
-    technologies: ["Python", "Flask", "AWS S3", "AWS Lambda", "AWS RDS", "AWS EC2", "Docker"],
-    outcome: "Built a secure cloud file-sharing workflow with time-limited access links.",
+    name: "CloudVault - Secure File-Sharing Platform",
+    technologies: ["Python", "Flask", "AWS S3", "AWS Lambda", "AWS VPC", "AWS EC2", "AWS RDS", "Boto3", "Docker", "GitHub Actions", "CloudWatch"],
+    outcome: "Deployed secure file sharing with pre-signed S3 URLs and 24-hour auto-expiry.",
     description:
-      "Developed a Flask-based cloud storage application focused on secure file sharing, AWS-backed storage and deployment, and controlled access through expiring links.",
+      "Built a secure Flask and Boto3 backend for uploading, sharing, and expiring files through pre-signed S3 URLs. Designed the AWS architecture with a custom VPC, public and private subnets, least-privilege IAM roles, Lambda and EventBridge automation, PostgreSQL RDS behind an EC2 bastion host, automated pytest checks, Dockerized builds, GitHub Actions CI/CD, and CloudWatch monitoring.",
     repositoryUrl: "https://github.com/SurepallyBhavani/cloudvault-app"
   },
   {
     name: "RAG-Based Student Assistant for Academic Resource Access",
     technologies: ["Python", "Flask", "LangChain", "ChromaDB", "OpenRouter API"],
-    outcome: "Created a context-aware academic assistant for resource retrieval and response generation.",
+    outcome: "Built a RAG assistant that answers questions from ingested course PDFs.",
     description:
-      "Built a RAG workflow with PDF ingestion, semantic search, text preprocessing, TF-IDF and Naive Bayes query classification, plus a Flask API and web frontend.",
+      "Developed an academic question-answering assistant that ingests course PDFs, indexes content in ChromaDB, retrieves relevant context with semantic search, and generates answers through OpenRouter. Added TF-IDF based query classification, a Flask REST API, and a web frontend so students can search academic resources through a single interface.",
     repositoryUrl: "https://github.com/SurepallyBhavani/pg_project_rag"
   },
   {
     name: "Smart Medication Alert System using Image Processing",
-    technologies: ["YOLOv8", "OpenCV", "SQLite", "Twilio API"],
-    outcome: "Improved patient safety by detecting missed or incorrect doses and notifying caregivers.",
+    technologies: ["Computer Vision", "OpenCV", "SQLite", "Twilio API"],
+    outcome: "Detected missed or incorrect medication doses and notified caregivers.",
     description:
-      "Designed a vision-based medication monitoring system with automated SMS and call alerts for caregiver intervention."
+      "Created a computer-vision workflow that analyzes medication image input to detect missed or incorrect doses, records detection results in SQLite, and triggers caregiver notifications through Twilio SMS and call alerts. The system is designed to reduce manual monitoring effort and support faster intervention when medication routines are missed."
   },
   {
     name: "Website for JNTUH Healthcare Center",
     technologies: ["HTML", "CSS", "JavaScript", "Python", "Machine Learning"],
-    outcome: "Expanded campus health service access through responsive web support.",
+    outcome: "Built a student-facing healthcare support website with chatbot and voice assistance.",
     description:
-      "Developed a healthcare website with an intelligent chatbot and Telugu voice assistant for student-facing service discovery.",
+      "Designed and developed a responsive healthcare center website for campus users, focused on making services, support information, and basic assistance easier to access. Added an intelligent chatbot and Telugu voice assistant to help students find healthcare-related information quickly, with a simple web interface suited for repeated student use.",
     repositoryUrl: "https://github.com/SurepallyBhavani/mini-project"
   }
 ];
 
-export const education = [
+type EducationItem = {
+  school: string;
+  program: string;
+  period: string;
+  result: string;
+  logoInitials: string;
+  logoUrl?: string;
+};
+
+export const education: EducationItem[] = [
   {
-    school: "JNTUH University College of Engineering, Science and Technology, Hyderabad",
+    school: "JNTUH University College of Engineering, Science & Technology, Hyderabad",
     program: "Integrated B.Tech-M.Tech in Computer Science and Engineering",
     period: "2021 - Present",
-    result: "CGPA: 9.3"
+    result: "CGPA: 9.3",
+    logoInitials: "JNTUH",
+    logoUrl: "/jntu_logo.jpeg"
   },
   {
     school: "Narayana Junior College, Hyderabad",
     program: "Intermediate Education - MPC",
     period: "2019 - 2021",
-    result: "Percentage: 98.8%"
+    result: "Percentage: 98.8%",
+    logoInitials: "N",
+    logoUrl: "/inter_logo.jpeg"
   },
   {
     school: "DAV Public School, Hyderabad",
     program: "Secondary Education",
     period: "2007 - 2019",
-    result: "Percentage: 96.0%"
+    result: "Percentage: 96.0%",
+    logoInitials: "DAV",
+    logoUrl: "/school_logo.jpeg"
   }
 ];
 
 export const certifications = [
   {
-    name: "Yellow Belt and White Belt Security Expert",
+    name: "Yellow Belt & White Belt Security Expert",
     issuer: "Oracle Internal Technical Qualification",
     year: "2026"
   },
   {
     name: "AI Security Essentials Specialization",
-    issuer: "Proactive Security for AI Models, Attacks and Lifecycles",
+    issuer: "Proactive Security for AI Models, Attacks & Lifecycles",
     year: "2026"
   }
 ];
 
-export const achievements = [
+type LeadershipItem = {
+  title: string;
+  period: string;
+  description: string;
+  logoUrl?: string;
+};
+
+export const leadership: LeadershipItem[] = [
   {
     title: "Club Lead, JNTUH Data Science Student Club",
     period: "Nov 2023 - Nov 2024",
     description:
-      "Managed operations for a technical student community of 200+ members, including events, onboarding, and a competitive interactive chatbot development hackathon."
+      "Led a 200+ member student community, organized technical events and a chatbot-focused hackathon, and coordinated onboarding for new members.",
+    logoUrl: "/data_science.jpeg"
   },
   {
     title: "Workshop Coordinator, QUEST 2024",
     period: "Mar 2024 - Apr 2024",
     description:
-      "Coordinated logistics for multi-disciplinary technical workshops across Cyber Security, Machine Learning, and Web Technologies for over 150 participants."
+      "Coordinated logistics for multi-disciplinary technical workshops in Cyber Security and Machine Learning, serving 150+ participants.",
+    logoUrl: "/quest_logo.jpeg"
   }
 ];
