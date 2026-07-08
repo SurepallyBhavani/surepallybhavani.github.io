@@ -113,34 +113,22 @@ export default function Home() {
       <Section
         id="summary"
         eyebrow="Professional summary"
-        title="Secure software foundation with hands-on AI and backend delivery."
-        description="A concise view of the experience represented in the resume."
+        title="About me"
         tone="muted"
       >
-        <div className="narrative-grid">
-          <div className="surface-panel narrative-index p-6 md:p-8">
-            <p className="text-sm font-semibold uppercase text-teal/80">Profile signal</p>
-            <p className="mt-4 text-3xl font-semibold text-ink">Security-aware builder</p>
-            <p className="mt-4 text-base leading-7 text-ink/60">
-              Recruiters can scan this as a blend of secure application review, backend implementation, and
-              AI-assisted project delivery.
-            </p>
-          </div>
-          <div className="space-y-4">
+        <div className="grid gap-4 md:grid-cols-3">
           {summary.map((item, index) => (
-            <article key={item} className="narrative-item reveal-up p-5" style={{ animationDelay: `${index * 90}ms` }}>
-              <p className="text-sm font-semibold uppercase text-coral/80">0{index + 1}</p>
-              <p className="mt-2 text-base leading-7 text-ink/75">{item}</p>
+            <article key={item} className="surface-panel reveal-up p-5" style={{ animationDelay: `${index * 90}ms` }}>
+              <p className="text-base leading-7 text-ink/75">{item}</p>
             </article>
           ))}
-          </div>
         </div>
       </Section>
 
       <Section
         id="skills"
         eyebrow="Skills"
-        title="Grouped capabilities for software, systems, and security work."
+        title="Technical skills"
       >
         <div className="surface-panel p-5 md:p-8">
           {skills.map((group, index) => {
@@ -156,7 +144,6 @@ export default function Home() {
                     <Icon className="h-5 w-5" aria-hidden="true" />
                   </span>
                   <div>
-                    <p className="text-xs font-semibold uppercase text-aqua/70">Capability group</p>
                     <h3 className="mt-1 text-lg font-semibold text-ink">{group.category}</h3>
                   </div>
                 </div>
@@ -170,8 +157,7 @@ export default function Home() {
       <Section
         id="experience"
         eyebrow="Experience"
-        title="Application security work in an enterprise environment."
-        description="Timeline format, shaped for quick recruiter scanning."
+        title="Oracle security internship"
         tone="muted"
       >
         <div className="experience-frame relative pl-6">
@@ -214,7 +200,7 @@ export default function Home() {
       <Section
         id="projects"
         eyebrow="Projects"
-        title="Applied projects across RAG, computer vision, and campus services."
+        title="Selected projects"
       >
         <div className="space-y-5">
           {projects.map((project, index) => (
@@ -228,7 +214,7 @@ export default function Home() {
                 <ArrowUpRight className="h-5 w-5 shrink-0 text-coral transition group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-aqua lg:mt-8" aria-hidden="true" />
               </div>
               <div>
-                <p className="text-sm font-semibold uppercase text-aqua/75">Case study</p>
+                <p className="text-sm font-semibold uppercase text-aqua/75">Project</p>
                 <h3 className="mt-2 text-2xl font-semibold text-ink">{project.name}</h3>
                 <p className="mt-4 text-sm font-semibold leading-6 text-teal">{project.outcome}</p>
                 <p className="mt-4 text-base leading-7 text-ink/70">{project.description}</p>
