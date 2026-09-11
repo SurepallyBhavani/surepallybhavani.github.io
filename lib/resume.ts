@@ -90,6 +90,14 @@ export const experience = [
 
 export const projects = [
   {
+    name: "Server Telemetry Anomaly Detection (NAB Benchmark)",
+    technologies: ["Python", "Pandas", "Scikit-learn", "Isolation Forest", "Time-Series Analysis", "Matplotlib"],
+    outcome: "Evaluated 5 anomaly-detection methods against real ground-truth labels across all 7 NAB telemetry files.",
+    description:
+      "Built a rigorous, evidence-driven progression of anomaly-detection methods - raw value comparison, rolling mean, rolling standard deviation, a combined rule, and Isolation Forest - on real AWS CloudWatch and industrial-sensor telemetry from the NAB (Numenta Anomaly Benchmark) dataset. Scored every method with precision/recall against human-confirmed ground-truth anomaly windows across all 7 files rather than a single cherry-picked example, and documented per-file error analysis showing where each method structurally succeeds or fails.",
+    repositoryUrl: "https://github.com/SurepallyBhavani/Server-Telemetry-Anomaly-Detection"
+  },
+  {
     name: "CloudVault - Secure File-Sharing Platform",
     technologies: ["Python", "Flask", "AWS S3", "AWS Lambda", "AWS VPC", "AWS EC2", "AWS RDS", "Boto3", "Docker", "GitHub Actions", "CloudWatch"],
     outcome: "Deployed secure file sharing with pre-signed S3 URLs and 24-hour auto-expiry.",
